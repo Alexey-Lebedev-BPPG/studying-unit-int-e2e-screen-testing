@@ -109,6 +109,6 @@
     "react-router-dom": "^6.4.5",
     "storybook": "^7.2.2",
     "wdio-chromedriver-service": "^8.1.1",
-    "webpack": "^5.75.0"
+    "webpack": "^5.76.0"
   }
 }
