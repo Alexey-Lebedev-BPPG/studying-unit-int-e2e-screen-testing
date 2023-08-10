@@ -1,19 +1,18 @@
-/* eslint-disable no-undef */
-const Page = require("./page");
+const Page = require('./page');
 
 // создаем класс нашей страницы
 class HelloPage extends Page {
-  // получаем наш элемент по айди
+  // получаем наш элемент по айди (селекторы как в css)
   get toggleBtn() {
-    return $("#toggle");
+    return $('#toggle');
   }
 
   get searchInput() {
-    return $("#search");
+    return $('#search');
   }
 
   get helloTitle() {
-    return $("#hello");
+    return $('#hello');
   }
 
   // делаем метод, который переключит отображение нашего заголовка. !!!Важно!!! Все методы лучше всего делать асинхронными, т.к. они проходят в браузере и на них требуется время.
@@ -24,7 +23,7 @@ class HelloPage extends Page {
   }
   // какую страницу будем открывать для этого класса
   open() {
-    return super.open("/hello");
+    return super.open('/hello');
   }
 }
 
